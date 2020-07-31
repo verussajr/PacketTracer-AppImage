@@ -3,7 +3,7 @@ dist: focal
 language: python
 
 install:
-  - sudo apt-get install build-essential wget git -y
+  - sudo apt-get install build-essential wget git desktop-file-utils -y
 
 before_script:
   - git clone https://github.com/Avlye/PacketTracer-AppImage
