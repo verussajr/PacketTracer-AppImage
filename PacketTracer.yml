@@ -25,7 +25,7 @@ script:
   # - find opt/pt/saves -type d -exec chmod +w {} +
 
   # Copy helper script to bin
-  - cp ../packet_tracer.py usr/bin/
+  - cp packet_tracer.py usr/bin/
 
   # Copy .desktop file, icon and libs from extracted archive
   - cp usr/share/applications/cisco-pt7.desktop ./PacketTracer.desktop
