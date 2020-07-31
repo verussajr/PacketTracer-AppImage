@@ -15,10 +15,11 @@ before_script:
 script:  
   - ./pkg2appimage PacketTracer.yml
 
-after_success:
-  - ls -lh out/*
-  - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-  - bash upload.sh out/*
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: "../out/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage"
+  skip_cleanup: true
 
 branches:
   except:
