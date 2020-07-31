@@ -2,8 +2,11 @@ dist: bionic
 language: python
 
 script:
-  - wget -q https://raw.githubusercontent.com/AppImage/pkg2appimage/master/functions.sh -O ./functions.sh
-  - . ./functions.sh
+  - git clone https://github.com/Avlye/PacketTracer-AppImage
+  - cd PacketTracer-AppImage/
+  - wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
+  - chmod +x pkg2appimage
+  - ./pkg2appimage PacketTracer.yml
 
 after_success:
   - ls -lh out/* # Assuming you have some files in out/ that you would like to upload
