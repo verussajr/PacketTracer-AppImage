@@ -22,38 +22,38 @@ script:
   - chmod +x packet_tracer.py
 
   # Fix overly restrictive permissions - we should be able do delete directory
-  # - find opt/pt/saves -type d -exec chmod +w {} +
+  - find /opt/pt/saves -type d -exec chmod +w {} +
 
   # Copy helper script to bin
-  - cp packet_tracer.py usr/bin/
+  - cp packet_tracer.py /usr/bin/
 
   # Copy .desktop file, icon and libs from extracted archive
-  - cp usr/share/applications/cisco-pt7.desktop ./PacketTracer.desktop
-  - cp opt/pt/art/app.png ./PacketTracer.png
-  - mkdir -p usr/lib/x86_64-linux-gnu/
-  - mv opt/pt/bin/*.so.* usr/lib/x86_64-linux-gnu/
+  - cp /usr/share/applications/cisco-pt7.desktop ./PacketTracer.desktop
+  - cp /opt/pt/art/app.png ./PacketTracer.png
+  - mkdir -p /usr/lib/x86_64-linux-gnu/
+  - mv /opt/pt/bin/*.so.* /usr/lib/x86_64-linux-gnu/
 
   # Remove unused binaries
-  - rm opt/pt/bin/linguist opt/pt/bin/meta
+  - rm /opt/pt/bin/linguist opt/pt/bin/meta
 
   # Fix wrong permissions - images shouldn't be executable. Cisco still cannot into permissions, even with deb. ;)
-  - find opt/pt/help/default/images/ -type f -exec chmod -x {} +
-  - chmod -x opt/pt/art/ComponentBox/*.png
-  - chmod -x opt/pt/art/Toolbar/*.png
+  - find /opt/pt/help/default/images/ -type f -exec chmod -x {} +
+  - chmod -x /opt/pt/art/ComponentBox/*.png
+  - chmod -x /opt/pt/art/Toolbar/*.png
 
   # Add wrapper
-  - cat > usr/bin/PacketTracerWrapper << EOF
+  - cat > /usr/bin/PacketTracerWrapper << EOF
   - #!/bin/sh
 
   # Fool PacketTracer into thinking that it's been already running from this directory
   - cd ..
-  - usr/bin/python3 usr/bin/packet_tracer.py
-  - cd opt/pt/bin
+  - python /usr/bin/packet_tracer.py
+  - cd /opt/pt/bin
   - QT_AUTO_SCREEN_SCALE_FACTOR=1 ./PacketTracer7 "$@"
   - EOF
 
   # Make it executable
-  - chmod +x usr/bin/PacketTracerWrapper
+  - chmod +x /usr/bin/PacketTracerWrapper
 
   # Patch PT bin - change $HOME/.packettracer string to something else
   # New file name must have the same length
