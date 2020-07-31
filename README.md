@@ -1,5 +1,7 @@
 # AppImage for Cisco Packet Tracer
 
+[![Build Status](https://travis-ci.org/Avlye/PacketTracer-AppImage.svg?branch=master)](https://travis-ci.org/Avlye/PacketTracer-AppImage)
+
 *🎶I'm already Tracer🎶*
 
 A configuration tool for building appimages with [pkg2appimage](https://github.com/AppImage/pkg2appimage) for Packet Tracer.
