@@ -2,6 +2,9 @@ os: linux
 dist: focal
 language: python
 
+python:
+  - "3.8.5"
+
 install:
   - sudo apt-get install build-essential wget git desktop-file-utils -y
 
@@ -17,9 +20,8 @@ script:
 
 deploy:
   provider: releases
-  api_key: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   file: "../out/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage"
-  skip_cleanup: true
 
 branches:
   except:
