@@ -13,7 +13,7 @@ ingredients:
   script:
     - FILENAME=PacketTracer_730_amd64.deb
     - [ -f ../"$FILENAME" ] && ln -sf ../"$FILENAME" .
-    - [ -f ../"$FILENAME" ] || wget -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb
+    - [ -f ../"$FILENAME" ] || wget -q -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb
     - echo "c96ed6356cabeca198f8fbe237197dc7c234cd37 $FILENAME" > checksum
     - sha1sum -c checksum
     - wget -c https://raw.githubusercontent.com/konradmb/PacketTracer-AppImage/master/etc/PacketTracerSettingsFix.py
