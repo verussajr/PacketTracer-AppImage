@@ -10,17 +10,17 @@ ingredients:
     - python3
     - libdouble-conversion1
     - qt-at-spi
-  script:
-    - wget -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb -O PacketTracer.deb
-    - FILENAME=PacketTracer.deb
-    - [ -f ../"$FILENAME" ]
-    - ln -sf ../"$FILENAME" .
-    - echo "c96ed6356cabeca198f8fbe237197dc7c234cd37 $FILENAME" > checksum
-    - sha1sum -c checksum
-    - wget -c https://raw.githubusercontent.com/Avlye/PacketTracer-AppImage/master/src/main.py -O packet_tracer.py
-    - chmod +x packet_tracer.py
-
+    
 script:
+ - wget -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb -O PacketTracer.deb
+  - FILENAME=PacketTracer.deb
+  - [ -f ../"$FILENAME" ]
+  - ln -sf ../"$FILENAME" .
+  - echo "c96ed6356cabeca198f8fbe237197dc7c234cd37 $FILENAME" > checksum
+  - sha1sum -c checksum
+  - wget -c https://raw.githubusercontent.com/Avlye/PacketTracer-AppImage/master/src/main.py -O packet_tracer.py
+  - chmod +x packet_tracer.py
+  
   # Fix overly restrictive permissions - we should be able do delete directory
   # - find opt/pt/saves -type d -exec chmod +w {} +
 
