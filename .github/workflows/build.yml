@@ -28,7 +28,7 @@ jobs:
         env:
           UPDATE_INFO: gh-releases-zsync|Avlye|PacketTracer-AppImage|latest|*x86_64.AppImage.zsync
         with:
-          recipe: ${{ github.workspace }}/PacketTracer.yml
+          recipe: ${{ github.repository }}/PacketTracer.yml
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
