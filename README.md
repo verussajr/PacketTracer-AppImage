@@ -12,6 +12,8 @@ Would be ideal having an automated build release for Cisco Packet Tracer, so you
 Thinking about that, I decided to create this repo as an opinionated tool for building app images.
 
 ## How to contribute?
+### Enviroment
+GITHUB_TOKEN=generated_token_acess
 
 ### Requirements
 - git
