@@ -4,7 +4,7 @@
 
 *🎶I'm already Tracer🎶*
 
-A configuration tool for building appimages with [pkg2appimage](https://github.com/AppImage/pkg2appimage) for Packet Tracer.
+An automated tool for building appimages with [pkg2appimage](https://github.com/AppImage/pkg2appimage) for Packet Tracer. 
 
 This repo is a fork from [Diolinux/PacketTracer-AppImage](https://github.com/Diolinux/PacketTracer-AppImage).
 
