@@ -2,12 +2,20 @@ os: linux
 dist: bionic
 language: python
 
-script:
+install:
+  - sudo apt-get install build-essential wget git -y
+
+before_script:
   - git clone https://github.com/Avlye/PacketTracer-AppImage
   - cd PacketTracer-AppImage/
+  - wget -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb
   - wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
   - chmod +x pkg2appimage
+
+script:  
   - ./pkg2appimage PacketTracer.yml
+
+after_success:
   - ls -lh out/*
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
   - bash upload.sh out/*
