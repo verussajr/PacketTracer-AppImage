@@ -1,7 +1,7 @@
 dist: bionic
 
 script:
-  - wget -q https://github.com/AppImage/AppImages/raw/${PKG2AICOMMIT}/functions.sh -O ./functions.sh
+  - wget -q https://raw.githubusercontent.com/AppImage/pkg2appimage/master/functions.sh -O ./functions.sh
   - . ./functions.sh
 
 after_success:
