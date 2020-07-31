@@ -1,20 +1,14 @@
-sudo: required
-language: generic
-
-services:
-  - docker
+os: linux
+dist: bionic
+language: python
 
 script:
-  - wget -c http://travis.debian.net/script.sh -O script.sh
-  - . ./script.sh
   - git clone https://github.com/Avlye/PacketTracer-AppImage
   - cd PacketTracer-AppImage/
   - wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
   - chmod +x pkg2appimage
   - ./pkg2appimage PacketTracer.yml
-
-after_success:
-  - ls -lh out/* # Assuming you have some files in out/ that you would like to upload
+  - ls -lh out/*
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
   - bash upload.sh out/*
 
