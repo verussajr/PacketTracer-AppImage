@@ -21,7 +21,6 @@ class Tracer:
             apppath = Path.joinpath(self.current_directory, "opt", "pt")
             apppath_saves = Path.joinpath(apppath, "saves")
 
-            Path(apppath).mkdir(parents=True, exist_ok=True)
             Path(apppath_saves).mkdir(parents=True, exist_ok=True)
 
             apppath_encoded = bytearray(apppath, "utf16")[2:-1]
