@@ -17,6 +17,8 @@ before_script:
 
 script:  
   - ./pkg2appimage PacketTracer.yml
+  - ls -asl && find out
+  
 
 before_deploy:
   # Set up git user name and tag this commit
