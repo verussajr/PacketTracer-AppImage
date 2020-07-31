@@ -18,6 +18,13 @@ before_script:
 script:  
   - ./pkg2appimage PacketTracer.yml
 
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "Gabriel Almir"
+  - git config --local user.email "avlye@outlook.com"
+  - export TRAVIS_TAG=${Packet Tracer - App Image:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
