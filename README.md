@@ -8,6 +8,8 @@ A configuration tool for building appimages with [pkg2appimage](https://github.c
 
 This repo is a fork from [Diolinux/PacketTracer-AppImage](https://github.com/Diolinux/PacketTracer-AppImage).
 
+# Latest Release
+
 ## Motivations
 
 Would be ideal having an automated build release for Cisco Packet Tracer, so you can always get the latest release.
