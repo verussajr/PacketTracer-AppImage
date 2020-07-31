@@ -11,7 +11,6 @@ install:
 before_script:
   - git clone https://github.com/Avlye/PacketTracer-AppImage
   - cd PacketTracer-AppImage/
-  - wget --quiet -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb
   - wget --quiet https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
   - chmod +x pkg2appimage
 
