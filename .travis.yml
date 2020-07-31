@@ -1,3 +1,9 @@
+dist: bionic
+
+script:
+  - wget -q https://github.com/AppImage/AppImages/raw/${PKG2AICOMMIT}/functions.sh -O ./functions.sh
+  - . ./functions.sh
+
 after_success:
   - ls -lh out/* # Assuming you have some files in out/ that you would like to upload
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
