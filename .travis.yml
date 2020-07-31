@@ -1,4 +1,5 @@
 dist: bionic
+language: python
 
 script:
   - wget -q https://raw.githubusercontent.com/AppImage/pkg2appimage/master/functions.sh -O ./functions.sh
