@@ -30,7 +30,7 @@ before_deploy:
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
-  file: "../out/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage"
+  file: "out/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage"
 
 branches:
   except:
