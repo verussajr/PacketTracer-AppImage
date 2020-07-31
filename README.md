@@ -10,6 +10,8 @@ This repo is a fork from [Diolinux/PacketTracer-AppImage](https://github.com/Dio
 
 # Latest Release
 
+Download now the lastest release on [Avlye/PacketTracer-AppImage](https://github.com/Avlye/PacketTracer-AppImage/releases/tag/latest).
+
 ## Motivations
 
 Would be ideal having an automated build release for Cisco Packet Tracer, so you can always get the latest release.
