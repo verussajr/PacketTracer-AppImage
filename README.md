@@ -1,4 +1,4 @@
-# AppImage para Cisco Packet Tracer
+# AppImage for Cisco Packet Tracer
 
 *🎶I'm already Tracer🎶*
 
