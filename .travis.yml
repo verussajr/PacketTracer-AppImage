@@ -22,6 +22,7 @@ script:
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
+  file_glob: true
   file: "out/*"
   overwrite: true
   skip_cleanup: true
