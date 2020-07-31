@@ -16,6 +16,7 @@ Thinking about that, I decided to create this repo as an opinionated tool for bu
 ### Requirements
 - git
 - wget
+- desktop-file-utils
 
 ### Get Started
 
