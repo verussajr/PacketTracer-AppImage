@@ -11,7 +11,7 @@ install:
 before_script:
   - git clone https://github.com/Avlye/PacketTracer-AppImage
   - cd PacketTracer-AppImage/
-  - wget --quiet https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
+  - wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
   - chmod +x pkg2appimage
 
 script:
