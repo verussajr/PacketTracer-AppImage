@@ -1,0 +1,5 @@
+*.tar.gz
+*.deb
+/PacketTracer*/
+/pkg2appimage
+/out
