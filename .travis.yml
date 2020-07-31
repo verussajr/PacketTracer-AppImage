@@ -5,7 +5,8 @@ services:
   - docker
 
 script:
-  - wget -O- http://travis.debian.net/script.sh | sh -
+  - wget -c http://travis.debian.net/script.sh -O script.sh
+  - . ./script.sh
   - git clone https://github.com/Avlye/PacketTracer-AppImage
   - cd PacketTracer-AppImage/
   - wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
