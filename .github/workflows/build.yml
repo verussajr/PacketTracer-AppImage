@@ -18,17 +18,23 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
-      - name: Build AppImage
-        run: |
-          git clone https://github.com/Avlye/PacketTracer-AppImage
-          cd PacketTracer-AppImage/
-          wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
-          chmod +x pkg2appimage
-          ./pkg2appimage PacketTracer.yml
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}
+
+      - name: Build App Image
+        uses: AppImageCrafters/build-appimage-action@v1
         env:
           UPDATE_INFO: gh-releases-zsync|Avlye|PacketTracer-AppImage|latest|*x86_64.AppImage.zsync
-      - uses: actions/upload-artifact@v2
         with:
-          name: AppImage
-          path: out/
+          recipe: ${{ github.workspace }}/PacketTracer.yml
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        env:
+          name: PacketTracer
+          version: 7.3
+        with:
+          name: ${{ env.name }}-${{ env.version }}
+          path: ${{ github.workspace }}/out/**/*
