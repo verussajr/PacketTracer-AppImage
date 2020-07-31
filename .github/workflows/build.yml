@@ -20,12 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build AppImage
-        uses: AppImageCrafters/build-appimage-action@master
+        run: |
+          git clone https://github.com/Avlye/PacketTracer-AppImage
+          cd PacketTracer-AppImage/
+          wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
+          chmod +x pkg2appimage
+          ./pkg2appimage PacketTracer.yml
         env:
           UPDATE_INFO: gh-releases-zsync|Avlye|PacketTracer-AppImage|latest|*x86_64.AppImage.zsync
-        with:
-          # appimage-builder recipe file
-          recipe: PacketTracer.yml
       - uses: actions/upload-artifact@v2
         with:
           name: AppImage
+          path: out/
