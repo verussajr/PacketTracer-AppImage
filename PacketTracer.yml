@@ -11,8 +11,8 @@ ingredients:
     - libdouble-conversion1
     - qt-at-spi
   script:
-    - wget -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb
-    - FILENAME=PacketTracer_730_amd64.deb
+    - wget -c https://archive.org/download/packettracer730mac_202002/PacketTracer_730_amd64.deb -O PacketTracer.deb
+    - FILENAME=PacketTracer.deb
     - [ -f ../"$FILENAME" ]
     - ln -sf ../"$FILENAME" .
     - echo "c96ed6356cabeca198f8fbe237197dc7c234cd37 $FILENAME" > checksum
@@ -22,7 +22,7 @@ ingredients:
 
 script:
   # Fix overly restrictive permissions - we should be able do delete directory
-  - find opt/pt/saves -type d -exec chmod +w {} +
+  # - find opt/pt/saves -type d -exec chmod +w {} +
 
   # Copy helper script to bin
   - cp ../packet_tracer.py usr/bin/
