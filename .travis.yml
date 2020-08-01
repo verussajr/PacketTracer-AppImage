@@ -35,6 +35,3 @@ deploy:
   file: "out/*.AppImage"
   overwrite: true
   cleanup: false
-
-after_deploy:
-  cleanup: true
