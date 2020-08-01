@@ -3,25 +3,38 @@ dist: focal
 language: python
 
 python:
+  # Set Python Version
   - "3.8.5"
 
 install:
+  # Install All Dependencies for compiling AppImages
   - sudo apt-get install build-essential wget git desktop-file-utils -y
 
 before_script:
+  # Download Repo as a Local Repo
+  - git config --global color.ui true
   - git clone https://github.com/Avlye/PacketTracer-AppImage
   - cd PacketTracer-AppImage/
+
+  # Download PKG2AppImage as a Local Executable
   - wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
   - chmod +x pkg2appimage
 
 script:
+  # Run Pk2AppImage with `PacketTracer` recipe.
   - ./pkg2appimage PacketTracer.yml
+
+  # List Out All current files
   - ls -asl && find out
 
 deploy:
+  # Deploy to Github Releases All AppImages
   provider: releases
   token: $GITHUB_TOKEN
   file_glob: true
-  file: "out/*"
+  file: "out/*.AppImage"
   overwrite: true
   cleanup: false
+
+after_deploy:
+  cleanup: true
