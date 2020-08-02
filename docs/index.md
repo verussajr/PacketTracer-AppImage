@@ -19,12 +19,20 @@ Thinking about that, I decided to create this repo as an opinionated tool for bu
 
 ## How to contribute?
 ### Enviroment
+```
 GITHUB_TOKEN=generated_token_acess
+```
 
 ### Requirements
 - git
 - wget
 - desktop-file-utils
+- build-essential (optional & recommended)
+
+```bash
+# Example On Ubuntu
+sudo apt install build-essential git wget desktop-file-utils -y
+```
 
 ### Get Started
 
