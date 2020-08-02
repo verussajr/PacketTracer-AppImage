@@ -29,7 +29,7 @@ GITHUB_TOKEN=generated_token_acess
 - desktop-file-utils
 - build-essential (optional & recommended)
 
-```bash
+```zsh
 # Example On Ubuntu
 sudo apt install build-essential git wget desktop-file-utils -y
 ```
@@ -37,18 +37,18 @@ sudo apt install build-essential git wget desktop-file-utils -y
 ### Get Started
 
 1. Clone this repo
-  ```shell
+  ```zsh
   git clone https://github.com/Avlye/PacketTracer-AppImage
   cd PacketTracer-AppImage/
   ```
 
 2. Download pkg2appimage tool and create a executable binary
-  ```shell
+  ```zsh
    wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
    chmod +x pkg2appimage
    ```
 3. Build
-  ```shell
+  ```zsh
    ./pkg2appimage PacketTracer.yml
    ```
 
