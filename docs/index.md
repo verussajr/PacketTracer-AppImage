@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="https://gist.githubusercontent.com/Avlye/2526c796283b4c9c1704e904f6eeb449/raw/de72b42f0315b866a98f40c425cf68cc4c05f07b/packet_tracer.css" title="Packet Tracer CSS" />
+<link rel="stylesheet" type="text/css" href="https://gist.githubusercontent.com/Avlye/2526c796283b4c9c1704e904f6eeb449/raw/5d20cb46cb205ddcbb9023ae2cdccb5eb5d5f431/packet_tracer.css" title="Packet Tracer CSS" />
 
 # AppImage for Cisco Packet Tracer
 
