@@ -1,28 +1,3 @@
-<style>
-.btn, .btn a {
-    color: #f5f5f5;
-}
-
-.btn {
-    border-radius: 8px;
-    background: #267CB9;
-    color: #fff;
-    padding: 1rem;
-    text-decoration: none;
-    transition: all 0.25s ease-out;
-}
-
-.btn:hover {
-    background: #009926;
-    padding: 1rem;
-    text-decoration: underline;
-}
-
-.btn a:hover {
-    font-weight: normal;
-}  
-</style>
-
 # AppImage for Cisco Packet Tracer
 
 [![Build Status](https://travis-ci.org/Avlye/PacketTracer-AppImage.svg?branch=master)](https://travis-ci.org/Avlye/PacketTracer-AppImage)
