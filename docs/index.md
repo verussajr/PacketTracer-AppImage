@@ -12,9 +12,8 @@ This repo is a fork from [Diolinux/PacketTracer-AppImage](https://github.com/Dio
 
 # Latest Release
 
-<div class="btn">
-  <a href="https://github.com/Avlye/PacketTracer-AppImage/releases/tag/latest" download="download">Download now the lastest release on Avlye/PacketTracer-AppImage</a>.
-</div>
+
+<a href="https://github.com/Avlye/PacketTracer-AppImage/releases/download/latest/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage" download="download">Download now the lastest release on Avlye/PacketTracer-AppImage</a>.
 
 ## Motivations
 
