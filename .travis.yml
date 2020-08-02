@@ -32,6 +32,6 @@ deploy:
   provider: releases
   token: $GITHUB_TOKEN
   file_glob: true
-  file: "out/*.AppImage"
+  file: "out/*"
   overwrite: true
   cleanup: false
