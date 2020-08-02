@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="https://gist.githubusercontent.com/Avlye/2526c796283b4c9c1704e904f6eeb449/raw/de72b42f0315b866a98f40c425cf68cc4c05f07b/packet_tracer.css" title="Packet Tracer CSS" />
+
 # AppImage for Cisco Packet Tracer
 
 [![Build Status](https://travis-ci.org/Avlye/PacketTracer-AppImage.svg?branch=master)](https://travis-ci.org/Avlye/PacketTracer-AppImage)
