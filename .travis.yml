@@ -31,5 +31,6 @@ deploy:
   # Deploy to Github Releases All AppImages
   provider: releases
   token: $GITHUB_TOKEN
+  file: "out/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage"
   overwrite: true
-  cleanup: false
+  skip_cleanup: true
