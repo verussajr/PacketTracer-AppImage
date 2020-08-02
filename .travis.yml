@@ -31,7 +31,5 @@ deploy:
   # Deploy to Github Releases All AppImages
   provider: releases
   token: $GITHUB_TOKEN
-  file_glob: true
-  file: "out/*"
   overwrite: true
   cleanup: false
