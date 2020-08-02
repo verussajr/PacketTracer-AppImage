@@ -40,20 +40,24 @@ sudo apt install build-essential git wget desktop-file-utils -y
 ### Get Started
 
 1. Clone this repo
-  ```zsh
-  git clone https://github.com/Avlye/PacketTracer-AppImage
-  cd PacketTracer-AppImage/
-  ```
+
+```zsh
+git clone https://github.com/Avlye/PacketTracer-AppImage
+cd PacketTracer-AppImage/
+```
 
 2. Download pkg2appimage tool and create a executable binary
-  ```zsh
-   wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
-   chmod +x pkg2appimage
-   ```
+
+```zsh
+ wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
+ chmod +x pkg2appimage
+ ```
+
 3. Build
-  ```zsh
-   ./pkg2appimage PacketTracer.yml
-   ```
+
+```zsh
+ ./pkg2appimage PacketTracer.yml
+ ```
 
 4. After all this process, the appimage of Packet Tracer will be in `out/` directory.
 
