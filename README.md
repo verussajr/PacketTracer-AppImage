@@ -18,7 +18,7 @@
 
 ## Download Latest Packet Tracer AppImage
 
-[![Cisco Packet Tracer App Image](download.png)](https://github.com/Avlye/PacketTracer-AppImage/releases/download/latest/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage)
+[![Cisco Packet Tracer App Image](docs/download.png)](https://github.com/Avlye/PacketTracer-AppImage/releases/download/latest/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage)
 
 ## Install
 

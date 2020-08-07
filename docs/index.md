@@ -22,6 +22,7 @@
 
 ## Install
 
+
 ```sh
 ./Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage
 ```
