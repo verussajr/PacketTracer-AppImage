@@ -22,7 +22,6 @@
 
 ## Install
 
-
 ```sh
 ./Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage
 ```
@@ -30,7 +29,9 @@
 ## Usage
 
 ```sh
-Double click on Packet Tracer AppImage
+To run the application, just click on the AppImage, just like any other AppImage.
+
+Also check if AppImage has permissions to execute the file properties. (**Right click on >> Properties**)
 ```
 
 ## Motivations
@@ -68,9 +69,6 @@ GITHUB_TOKEN=generated_token_acess
    ```
 
 4. After all this process, the appimage of Packet Tracer will be in `out/` directory.
-
-5. To run the application, just click on the AppImage, just like any other AppImage.
-  Also check if AppImage has permissions to execute the file properties. (**Right click on >> Properties**)
 
 
 ## Author
