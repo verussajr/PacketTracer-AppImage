@@ -1,65 +1,98 @@
-<link rel="stylesheet" type="text/css" href="https://gist.githubusercontent.com/Avlye/2526c796283b4c9c1704e904f6eeb449/raw/5d20cb46cb205ddcbb9023ae2cdccb5eb5d5f431/packet_tracer.css" title="Packet Tracer CSS" />
+<h1 align="center">AppImage for Cisco Packet Tracer 💻</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Avlye/PacketTracer-AppImage" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/AvlyeV" target="_blank">
+    <img alt="Twitter: AvlyeV" src="https://img.shields.io/twitter/follow/AvlyeV.svg?style=social" />
+  </a>
+</p>
 
-# AppImage for Cisco Packet Tracer
+> An automated tool for building appimages with pkg2appimage for Packet Tracer.
 
-[![Build Status](https://travis-ci.org/Avlye/PacketTracer-AppImage.svg?branch=master)](https://travis-ci.org/Avlye/PacketTracer-AppImage)
+### 🏠 [Homepage](https://avlye.github.io/PacketTracer-AppImage/)
 
-*🎶I'm already Tracer🎶*
+## Download Latest Packet Tracer AppImage
 
-An automated tool for building appimages with [pkg2appimage](https://github.com/AppImage/pkg2appimage) for Packet Tracer. 
+[![Cisco Packet Tracer App Image](../download.png)](https://github.com/Avlye/PacketTracer-AppImage/releases/download/latest/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage)
 
-This repo is a fork from [Diolinux/PacketTracer-AppImage](https://github.com/Diolinux/PacketTracer-AppImage).
+## Install
 
-# Latest Release
+```sh
+./Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage
+```
 
+## Usage
 
-<a href="https://github.com/Avlye/PacketTracer-AppImage/releases/download/latest/Packet_Tracer_7.3.0-.glibc2.27-x86_64.AppImage" download="download">Download now the lastest release on Avlye/PacketTracer-AppImage</a>.
+```sh
+Double click on Packet Tracer AppImage
+```
 
 ## Motivations
 
 Would be ideal having an automated build release for Cisco Packet Tracer, so you can always get the latest release.
 Thinking about that, I decided to create this repo as an opinionated tool for building app images.
 
-## How to contribute?
+## How To Build Yourself
+
 ### Enviroment
-```
 GITHUB_TOKEN=generated_token_acess
-```
 
 ### Requirements
+
 - git
 - wget
 - desktop-file-utils
-- build-essential (optional & recommended)
-
-```zsh
-# Example On Ubuntu
-sudo apt install build-essential git wget desktop-file-utils -y
-```
 
 ### Get Started
 
 1. Clone this repo
-
-```zsh
-git clone https://github.com/Avlye/PacketTracer-AppImage
-cd PacketTracer-AppImage/
-```
+  ```shell
+  git clone https://github.com/Avlye/PacketTracer-AppImage
+  cd PacketTracer-AppImage/
+  ```
 
 2. Download pkg2appimage tool and create a executable binary
-
-```zsh
- wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
- chmod +x pkg2appimage
- ```
-
+  ```shell
+   wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
+   chmod +x pkg2appimage
+   ```
 3. Build
-
-```zsh
- ./pkg2appimage PacketTracer.yml
- ```
+  ```shell
+   ./pkg2appimage PacketTracer.yml
+   ```
 
 4. After all this process, the appimage of Packet Tracer will be in `out/` directory.
 
 5. To run the application, just click on the AppImage, just like any other AppImage.
   Also check if AppImage has permissions to execute the file properties. (**Right click on >> Properties**)
+
+
+## Author
+
+👤 **Gabriel Almir**
+
+* Website: http://avlye.me
+* Twitter: [@AvlyeV](https://twitter.com/AvlyeV)
+* Github: [@Avlye](https://github.com/Avlye)
+* LinkedIn: [@Avlye](https://linkedin.com/in/Avlye)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Avlye/PacketTracer-AppImage/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Gabriel Almir](https://github.com/Avlye).<br />
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
